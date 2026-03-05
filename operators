@@ -1,0 +1,80 @@
+using System;
+
+namespace HelloWorld
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int Int1 = 5;
+            int Int2 = 10;
+            Console.WriteLine(Int1);
+
+            Int1++;
+            Console.WriteLine(Int1);
+            // the line above getting the ++ just add one
+            // to the value of the variable
+
+            Int1+= 7;
+            Console.WriteLine(Int1);
+            // the line above getting the += add the number
+            // in front in the variable (now have the number 6 in)
+
+            Int1-= 8;
+            Console.WriteLine(Int1);
+            // the line above getting the -= sub the number
+            // in front in the variable (now have the number 13 in)
+
+            Console.WriteLine(Int1 * Int2);
+            // multiply the two variables
+            // can do with divide (/), plus (+) and minus (-)
+            // this follow the basic of aritimetica
+            // the parenteses comes first, than multiply and divide
+            // and then going on
+            Console.WriteLine((5 + 5) * 10);
+
+            Console.WriteLine(Math.Pow(5,4));
+            // the math search in the function of math
+            // the pow multiply by square
+            Console.WriteLine(Math.Sqrt(81));
+            // the math search in the function of math
+            // the sqrt divide by square
+
+            string String1 = "test";
+            Console.WriteLine(String1);
+            String1 += ".com";
+            Console.WriteLine(String1);
+            //like that, we can add something in your variables
+            //and it don't have to be just a int, can do it
+            //with all the types of variables
+            String1 = String1 + ".br";
+            Console.WriteLine(String1);
+            //we can do that form too
+
+            string[] StringArr = String1.Split(".");
+            Console.WriteLine(StringArr[0]);
+            Console.WriteLine(StringArr[1]);
+            Console.WriteLine(StringArr[2]);
+            //we can split the string but for this, we first 
+            //transform in a array, the Split function
+            //can do that with the information of a caracter
+            //or other things
+
+            Console.WriteLine(Int1.Equals(Int2));
+            Console.WriteLine(Int1.Equals(Int2 / 2));
+            //we can do a comparation of variables
+            //if the variables are equals, it will be
+            //call True, if not, call False
+            Console.WriteLine(Int1 != Int1);
+            Console.WriteLine(Int1 != Int2 / 2);
+
+            Console.WriteLine(Int1 <= Int2);
+            Console.WriteLine(Int1 >= Int2);
+            
+            Console.WriteLine(5 < 10 && 5 > 10); // one thing and other
+            Console.WriteLine(5 < 10 || 5 > 10); // one thing our other
+
+
+        }
+    }
+}
